@@ -1,0 +1,41 @@
+.item {
+  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+
+  padding: 20px 30px;
+
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+.item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.status {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-color: transparent;
+  border-radius: 50%;
+
+  .statusOffline {
+    background-color: maroon;
+  }
+
+  .statusOnline {
+    background-color: forestgreen;
+  }
+}
+.avatar {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 0px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2) inset;
+  border-radius: 5px;
+  padding: 10px;
+}
+.name {
+  font-size: 30px;
+  font-weight: 600;
+}
